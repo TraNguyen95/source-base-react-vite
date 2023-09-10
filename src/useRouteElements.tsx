@@ -10,6 +10,10 @@ export default function useRouteElements() {
       element: <ProductList />
     },
     {
+      path: '/test',
+      element: <ProductList />
+    },
+    {
       path: '/register',
       element: (
         <RegisterLayout>
