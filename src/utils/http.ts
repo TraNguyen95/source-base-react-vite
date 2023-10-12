@@ -64,6 +64,7 @@ export class Http {
         return response
       },
       (error: AxiosError) => {
+        console.log(error)
         // Chỉ toast lỗi không phải 422 và 401
         if (
           ![HttpStatusCode.UnprocessableEntity, HttpStatusCode.Unauthorized].includes(error.response?.status as number)
